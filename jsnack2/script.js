@@ -26,7 +26,7 @@ function dispari(){
     console.log(userNum)
     while(fine === false && index < userNum.length){
         console.log(index)
-        if(userNum[index] %2 === 1 ){
+        if(userNum[index] %2 != 0 ){
             console.log(userNum[index])
             arrayNum.push(userNum[index])
             console.log(arrayNum)
@@ -35,9 +35,9 @@ function dispari(){
             console.log("pari")
             index++;
         }
-
-    }
     output.innerHTML = `
     ${arrayNum}
 `;
+    }
+
 }

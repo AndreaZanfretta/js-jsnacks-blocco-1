@@ -6,6 +6,8 @@ let sommaNum = 0;
 document.getElementById("btn").addEventListener("click", somma);
 
 function somma(){
+    index = 0;
+    sommaNum = 0;
     let arrayNum = document.getElementById("num").value;
     let arrayNum1 = arrayNum.split("");
     console.log(arrayNum1)
